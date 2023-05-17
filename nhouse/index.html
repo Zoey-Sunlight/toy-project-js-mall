@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>내일의집</title>
+</head>
+<body>
+<section class="todo">
+    
+    <div class="tit">TODO</div>
+    <ol>
+        <li>상품목록 ajax로 가져오기</li>
+        <li>검색하면 해당하는 상품만 보여주기 + 찾은 글자에 배경색 입히기</li>
+        <li>장바구니로 상품을 드래그하거나, 담기 버튼을 누르면 추가되기 <br>이미 있는 상품이면 카드생성이 아니라 수량만 증가 + 수량 변경할 수 있도록 하기</li>
+        <li>장바구니에 최종가격계산하기</li>
+        <li>구매하기 누르면 모달창 띄우기</li>
+        <li>모달창에서 구매완료 누르면 영수증을 이미지형태로 보여주기</li>
+    </ol>
+</section>
+
+<section class="header">
+    <h4>내일의집</h4>
+    <ul>
+        <li class="active">HOME</li>
+        <li>스토어</li>
+        <li>시공견적</li>
+    </ul>
+    <div class="search-wrap">
+        <form name="form-search" method="get">
+            <input class="search" type="text" name="search" title="검색" placeholder="검색어를 입력하세요." autocomplete="off">
+            <button type="submit">
+              <span class="img">
+                <img src="images/ic_search_clr.png" alt="search">
+              </span>
+            </button>
+        </form>
+    </div>
+</section>
+<section class="max">
+    <div class="card-wrap">
+        <!-- <div class="card">
+            <div class="img">
+                <img src="">
+            </div>
+            <div class="txt">
+                <h5>식기세척기</h5>
+                <p>세척나라</p>
+                <h6>가격 : 10000</h6>
+            </div>
+            <div class="btn">
+                <button type="submit" name="addcart" value="cart">담기</button>
+            </div>
+        </div> -->
+    </div>
+    <div class="cart-wrap">
+        <div class="cart">
+            <div class="dropzone">상품을 드래그하거나 담기 버튼을 누르세요.</div>
+            <div class="price-total">
+                <h5>최종가격</h5>
+                <p>0</p>
+                <button class="btn btn-order" type="button" name="price-total" value="price">구매하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal-order-bg">
+    <div class="modal-order">
+        <div class="name">
+            <p>이름</p>
+            <input class="input-name" type="text" name="name" title="name" placeholder="이름을 입력하세요.">
+        </div>
+        <div class="number">
+            <p>연락처</p>
+            <input class="input-phone" type="text" name="phone" title="phone" placeholder="연락처를 입력하세요.">
+        </div>
+        <div class="btn-wrap">
+            <button class="btn btn-modal_submit" type="submit" name="modal_submit" value="submit">구매하기</button>
+            <button class="btn btn-modal_close" type="submit" name="modal_close" value="close">닫기</button>
+        </div>
+    </div>
+</div>
+<div class="modal-reciept-bg">
+    <div class="modal-reciept">
+        <canvas id="canvas" width="350" height="350"></canvas>
+    </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

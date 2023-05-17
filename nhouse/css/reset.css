@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-touch-callout: none;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.2px;
+}
+html {
+    overflow: auto;
+}
+html,
+body {
+    height: 100%;
+    color: #222;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, textarea, input, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	word-break: keep-all;
+	word-wrap: break-word;
+    border: 0;
+    vertical-align: baseline;
+}
+acronym,
+abbr {
+    cursor: help;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+label,
+select,
+input,
+button {
+    vertical-align: middle;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, main {
+	display:block;
+}
+audio[controls], canvas, video {
+    display:inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+audio, canvas, img, video {
+	vertical-align:middle;
+}
+ul, li {
+	list-style:none;
+    list-style-image: none;
+}
+ol>li {
+    list-style: decimal !important;
+    line-height: 1.6em;
+    margin-left: 24px;
+    padding-left: 2px;
+}
+
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img, fieldset {
+	border:0;
+	/*max-width: 100%;
+	max-height: 100%;*/
+	vertical-align: middle;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+input, select, textarea {
+    margin: 0;
+	line-height:1.2;
+	vertical-align:middle;
+}
+select {
+    height: 22px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    line-height: 1;
+}
+input[type="text"],input[type="password"],select {
+    border: 1px solid #c1c1c1;
+    height: 42px;
+    border-radius: 2px;
+	padding:0 10px;
+}
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+	padding:12px;
+	font-size:1rem;
+}
+strong { font-weight:bold; }
+input[type="file"] { font-size: 0.875rem; }
+body, table, th, td, input,
+textarea, button, select {
+	font-size:1rem;
+	color:#222;
+	font-weight:normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+button {
+	outline:0;
+    border: 0;
+    cursor: pointer;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    overflow: visible;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button, select {
+	text-transform:none;
+}
+button, input {
+	line-height:normal;
+}
+textarea {
+	resize:vertical;
+	overflow:auto;
+}
+address, caption, cite, code,
+dfn, em, var {
+	font-style:normal;
+	font-weight:normal;
+}
+label, a {
+	cursor:pointer;
+}
+nav a,
+button {
+    min-width: 36px;
+    min-height: 36px;
+}
+/* For Screen Reader */
+legend, caption {
+	display:none;
+	visibility:hidden;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+	margin:1em 0;
+	padding:0;
+}
+p {
+	line-height:1.5em;
+	word-break: keep-all;
+}
+a {
+    color: #222;
+	text-decoration:none;
+}
+a:active, a:hover, a:focus {
+	text-decoration:none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+button{
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+	border:0px;
+	background:none;
+}
+
+em { font-style: italic !important }
+
